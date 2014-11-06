@@ -10,7 +10,7 @@
  */
 function snippet($file, $data = array(), $return = false) {
   if(is_object($data)) $data = array('item' => $data);
-  return tpl::load(kirby::instance()->roots()->snippets() . DS . $file . '.php', $data, $return);
+  return tpl::load(kirby::instance()->roots()->snippets() . DS . $file, $data, $return);
 }
 
 /**
